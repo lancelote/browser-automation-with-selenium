@@ -8,6 +8,7 @@
 - [x] Chapter 2: Setting Up Your Environment
   - [Install Webdriver](src/chapter2/using_webdriver_manager.py)
 - [ ] Chapter 3: Browser Automation
+  - [First Automation](src/chapter3/first_automation.py)
 - [ ] Chapter 4: Professional Browser Automation
 
 [1]: https://learning.oreilly.com/videos/browser-automation-with/9781800560161
