@@ -9,6 +9,7 @@
   - [Install Webdriver](src/chapter2/using_webdriver_manager.py)
 - [ ] Chapter 3: Browser Automation
   - [First Automation](src/chapter3/first_automation.py)
+  - [Finding Elements on the Page](src/chapter3/find_elements.py)
 - [ ] Chapter 4: Professional Browser Automation
 
 [1]: https://learning.oreilly.com/videos/browser-automation-with/9781800560161
