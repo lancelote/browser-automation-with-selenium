@@ -11,6 +11,7 @@
   - [First Automation](src/chapter3/first_automation.py)
   - [Finding Elements on the Page](src/chapter3/find_elements.py)
   - [Skill Challenge](src/chapter3/exercise.py)
+  - [Utility Belt](src/chapter3/utility_belt.py)
 - [ ] Chapter 4: Professional Browser Automation
 
 [1]: https://learning.oreilly.com/videos/browser-automation-with/9781800560161
