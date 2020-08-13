@@ -12,6 +12,7 @@
   - [Finding Elements on the Page](src/chapter3/find_elements.py)
   - [Skill Challenge](src/chapter3/exercise.py)
   - [Utility Belt](src/chapter3/utility_belt.py)
+  - [Browser Windows and Tabs](src/chapter3/browser_windows_and_tabs.py)
 - [ ] Chapter 4: Professional Browser Automation
 
 [1]: https://learning.oreilly.com/videos/browser-automation-with/9781800560161
