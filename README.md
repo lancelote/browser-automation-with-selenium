@@ -15,5 +15,6 @@
   - [Browser Windows and Tabs](src/chapter3/browser_windows_and_tabs.py)
   - [Handling IFrames and Frames](src/chapter3/handling_iframes_and_frames.py)
 - [ ] Chapter 4: Professional Browser Automation
+  - [Creating Page Object](src/chapter4/creating_page_object.py)
 
 [1]: https://learning.oreilly.com/videos/browser-automation-with/9781800560161
