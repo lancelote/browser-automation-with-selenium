@@ -1,0 +1,24 @@
+name: main
+
+on: push
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: prepare
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+
+    - name: install
+      run: pip install -r requirements.txt
+
+    - name: test
+      run: python -m pytest tests
+
+    - name: lint
+      run: pre-commit run --all-files
