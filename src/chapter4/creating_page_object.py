@@ -9,7 +9,7 @@ class TrainingGroundPage:
         self.driver = driver
         self.url = "https://techstepacademy.com/training-ground"
 
-    def go(self):
+    def go(self) -> None:
         self.driver.get(self.url)
 
     def type_into_input(self, text: str) -> None:
