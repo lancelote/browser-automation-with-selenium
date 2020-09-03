@@ -18,5 +18,6 @@ class BaseElement:
         element: WebElement = WebDriverWait(self.driver, 10).until(ec.element_to_be_clickable(self.locator))
         element.click()
 
+    @property
     def text(self) -> str:
         return self.web_element.text
