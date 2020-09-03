@@ -3,3 +3,6 @@
 
 # Webdriver
 geckodriver.log
+
+# Python
+__pycache__/
