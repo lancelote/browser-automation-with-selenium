@@ -18,5 +18,6 @@
   - [Creating Page Object](src/chapter4/creating_page_object.py)
   - [Base Element](src/chapter4/base_element.py)
   - [Using Base Element](src/chapter4/using_base_element.py)
+  - [Elegant Automation](src/chapter4/elegant_automation.py)
 
 [1]: https://learning.oreilly.com/videos/browser-automation-with/9781800560161
