@@ -19,5 +19,6 @@
   - [Base Element](src/chapter4/base_element.py)
   - [Using Base Element](src/chapter4/using_base_element.py)
   - [Elegant Automation](src/chapter4/elegant_automation.py)
+  - [Better Locators](src/chapter4/better_locators.py)
 
 [1]: https://learning.oreilly.com/videos/browser-automation-with/9781800560161

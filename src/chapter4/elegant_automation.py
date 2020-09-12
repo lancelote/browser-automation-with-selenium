@@ -1,11 +1,11 @@
 from typing import Optional
 
+from selenium.webdriver import Firefox
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver import Firefox
 from webdriver_manager.firefox import GeckoDriverManager
 
 
@@ -89,5 +89,5 @@ def main() -> None:
     browser.quit()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

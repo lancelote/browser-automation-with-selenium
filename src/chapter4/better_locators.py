@@ -1,18 +1,24 @@
+from typing import NamedTuple
 from typing import Optional
 
+from selenium.webdriver import Firefox
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver import Firefox
 from webdriver_manager.firefox import GeckoDriverManager
 
 
+class Locator(NamedTuple):
+    by: By
+    value: str
+
+
 class BaseElement:
-    def __init__(self, driver: WebDriver, by: By, value: str) -> None:
+    def __init__(self, driver: WebDriver, locator: Locator) -> None:
         self.driver = driver
-        self.locator = (by, value)
+        self.locator = locator
         self.web_element = self.find()
 
     def find(self) -> WebElement:
@@ -45,7 +51,8 @@ class TrainingGroundPage(BasePage):
 
     @property
     def button1(self) -> BaseElement:
-        return BaseElement(self.driver, By.ID, "b1")
+        locator = Locator(By.ID, "b1")
+        return BaseElement(self.driver, locator)
 
 
 class TrialPage(BasePage):
@@ -53,23 +60,28 @@ class TrialPage(BasePage):
 
     @property
     def stone_input(self) -> BaseElement:
-        return BaseElement(self.driver, By.ID, "r1Input")
+        locator = Locator(By.ID, value="r1Input")
+        return BaseElement(self.driver, locator)
 
     @property
     def stone_button(self) -> BaseElement:
-        return BaseElement(self.driver, By.ID, "r1Btn")
+        locator = Locator(By.ID, value="r1Btn")
+        return BaseElement(self.driver, locator)
 
     @property
     def stone_password(self) -> BaseElement:
-        return BaseElement(self.driver, By.ID, "passwordBanner")
+        locator = Locator(By.ID, value="passwordBanner")
+        return BaseElement(self.driver, locator)
 
     @property
     def secrets_input(self) -> BaseElement:
-        return BaseElement(self.driver, By.ID, "r2Input")
+        locator = Locator(By.ID, value="r2Input")
+        return BaseElement(self.driver, locator)
 
     @property
     def secrets_button(self) -> BaseElement:
-        return BaseElement(self.driver, By.ID, "r2Butn")
+        locator = Locator(By.ID, value="r2Butn")
+        return BaseElement(self.driver, locator)
 
 
 def main() -> None:
@@ -89,5 +101,5 @@ def main() -> None:
     browser.quit()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
